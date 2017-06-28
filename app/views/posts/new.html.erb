@@ -1,0 +1,7 @@
+<h1>This is to create posts</h1>
+
+<%= form_tag("/posts", method: "post") do %>
+    <%= text_field_tag(:title) %>
+    <%= text_area_tag(:content, "Hi, nice site", size: "24x6") %>
+    <%= submit_tag("Create new post") %>
+<% end %>
